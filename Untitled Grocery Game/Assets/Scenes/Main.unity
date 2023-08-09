@@ -230,7 +230,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 7673548305274206427, guid: d689d1ab5516e6b4f80f9f6c40d6db18, type: 3}
   bulletSpawnPoint: {fileID: 1011205841}
   projectileForce: 10
-  gunAnimator: {fileID: 1775192889}
+  gunAnimator: {fileID: 8158427806220237582, guid: d689d1ab5516e6b4f80f9f6c40d6db18, type: 3}
   offset: {x: 0.34, y: 0.62, z: 0}
 --- !u!1 &1011205840
 GameObject:
@@ -356,7 +356,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1775192888}
-  - component: {fileID: 1775192889}
   m_Layer: 0
   m_Name: WeaponHolder
   m_TagString: Untagged
@@ -380,27 +379,6 @@ Transform:
   m_Father: {fileID: 2008992649}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1775192889
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775192887}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 23a6fb846b88a7c4788639d7d5c4d4ff, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2008992644
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +466,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &2008992648
 SpriteRenderer:
   m_ObjectHideFlags: 0
