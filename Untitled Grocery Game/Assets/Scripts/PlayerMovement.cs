@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
 
-        Player  = GameObject.FindGameObjectWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag("Player");
         rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
         playerSprite = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
     }
