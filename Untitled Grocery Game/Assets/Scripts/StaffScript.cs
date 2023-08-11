@@ -20,7 +20,7 @@ public class StaffScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    gunAnimator = GameObject.Find("WeaponHolder").GetComponent<Animator>();
+    gunAnimator = GameObject.Find("Projectile").GetComponent<Animator>();
     staffRenderer = GetComponent<SpriteRenderer>();
     playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>(); 
     Player = GameObject.FindGameObjectWithTag("Player");
@@ -34,7 +34,7 @@ public class StaffScript : MonoBehaviour
             staffRenderer.sortingOrder = -1;
         }
         else {
-            staffRenderer.sortingOrder = 1;
+            staffRenderer.sortingOrder = 7;
         }
         currentGun = gameObject;
         if (Input.GetButtonDown("Fire1"))
