@@ -20,7 +20,6 @@ public class StaffScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    gunAnimator = GameObject.Find("Projectile").GetComponent<Animator>();
     staffRenderer = GetComponent<SpriteRenderer>();
     playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>(); 
     Player = GameObject.FindGameObjectWithTag("Player");
