@@ -6,6 +6,7 @@ public class EnemyShoot : MonoBehaviour
 {
     public GameObject Bullet;
     public Transform bulletPos;
+    public Animator animator;
 
     private float timer;
     private GameObject Player;
@@ -13,6 +14,7 @@ public class EnemyShoot : MonoBehaviour
     void Start()
     {
         Player =  GameObject.FindGameObjectWithTag("Player");
+        animator = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class EnemyShoot : MonoBehaviour
     }
 
     void shoot(){
+        animator.SetBool("Shoot", true);
         Instantiate(Bullet, bulletPos.position, Quaternion.identity);
     }
 }

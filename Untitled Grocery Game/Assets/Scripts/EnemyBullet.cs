@@ -16,13 +16,16 @@ public class EnemyBullet : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         animator = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Animator>();
 
-        animator.SetTrigger("Shoot");
         Vector3 direction = player.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
-        animator.ResetTrigger("Shoot");
-        
         float rot = Mathf.Atan2(-direction.x, -direction.y) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rot + 90);
+
+    }
+
+    IEnumerator ResetTrigger(){
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("Shoot", false);
     }
 
     // Update is called once per frame
