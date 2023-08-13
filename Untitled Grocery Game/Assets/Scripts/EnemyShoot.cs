@@ -19,7 +19,7 @@ public class EnemyShoot : MonoBehaviour
     void Update()
     {
         float distance = Vector2.Distance(transform.position, Player.transform.position);
-        if (distance < 10){
+        if (distance < 20){
         timer += Time.deltaTime;
 
             if (timer > 2){
