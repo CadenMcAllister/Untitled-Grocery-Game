@@ -6,7 +6,15 @@ using UnityEngine;
 public class BoltParticle : MonoBehaviour
 {    
     public ParticleSystem ExplosionObject;
+    public AudioSource Source;
+    public AudioClip Clip;
     private void OnCollisionEnter2D(Collision2D collision){
+        StartCoroutine(Collision());
+    }
+
+    IEnumerator Collision(){
+        yield return new WaitForSeconds(0.2f);
         Instantiate(ExplosionObject, transform.position, transform.rotation);
+        Source.PlayOneShot(Clip);
     }
 }
