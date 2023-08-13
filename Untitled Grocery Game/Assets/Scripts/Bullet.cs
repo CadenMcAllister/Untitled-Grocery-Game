@@ -5,10 +5,9 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 private void OnCollisionEnter2D(Collision2D collision){
-    Invoke("Destroy", 2);
+    if (collision.gameObject.tag == "Projectile"){
+        Destroy(collision.gameObject);
+    }
 }
 
-    void Destroy(){
-        Destroy(gameObject);
-    }
 }
