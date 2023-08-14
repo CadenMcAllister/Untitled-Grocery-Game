@@ -10,12 +10,24 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer playerSprite;
     public Sprite[] spriteList;
     Vector2 movement;
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public HealthBar healthBar;
     // Start is called before the first frame update
     void Start(){
+        currentHealth = maxHealth;
 
+        healthBar.SetMaxHealth(maxHealth);
         Player = GameObject.FindGameObjectWithTag("Player");
         rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
         playerSprite = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
+    }
+
+    void TakeDamage(int damage){
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
     }
 
     // Update is called once per frame
@@ -35,6 +47,12 @@ public class PlayerMovement : MonoBehaviour
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");        
+    }
+
+        private void OnTriggerEnter2D (Collider2D other){
+        if (other.gameObject.CompareTag("EnemyProjectile")){
+            TakeDamage(20);
+        }
     }
 
     void FixedUpdate(){
