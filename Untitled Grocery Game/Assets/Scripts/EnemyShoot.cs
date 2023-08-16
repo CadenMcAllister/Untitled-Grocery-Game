@@ -14,7 +14,7 @@ public class EnemyShoot : MonoBehaviour
     void Start()
     {
         Player =  GameObject.FindGameObjectWithTag("Player");
-        animator = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Animator>();
+        animator = GameObject.FindGameObjectWithTag("EnemyGFX").GetComponent<Animator>();
     }
 
     // Update is called once per frame
