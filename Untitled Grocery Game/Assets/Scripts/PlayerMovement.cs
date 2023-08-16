@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public int currentHealth;
 
     public HealthBar healthBar;
+    public GameObject gameOver;
     // Start is called before the first frame update
     void Start(){
         currentHealth = maxHealth;
@@ -43,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.A)){
             playerSprite.sprite = spriteList[3];
+        }
+        if (currentHealth == 0){
+            gameOver.SetActive(true);
         }
 
         movement.x = Input.GetAxisRaw("Horizontal");
