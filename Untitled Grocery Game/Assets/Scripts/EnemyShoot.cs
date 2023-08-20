@@ -13,8 +13,10 @@ public class EnemyShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (gameObject != null){
         Player =  GameObject.FindGameObjectWithTag("Player");
         animator = GameObject.FindGameObjectWithTag("EnemyGFX").GetComponent<Animator>();
+        }
     }
 
     // Update is called once per frame

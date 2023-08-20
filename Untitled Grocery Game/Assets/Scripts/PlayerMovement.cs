@@ -20,9 +20,11 @@ public class PlayerMovement : MonoBehaviour
         currentHealth = maxHealth;
 
         healthBar.SetMaxHealth(maxHealth);
+        if (gameObject != null){
         Player = GameObject.FindGameObjectWithTag("Player");
         rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
         playerSprite = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
+        }
     }
 
     void TakeDamage(int damage){
@@ -47,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (currentHealth == 0){
             gameOver.SetActive(true);
+            Destroy(gameObject);
         }
 
         movement.x = Input.GetAxisRaw("Horizontal");
