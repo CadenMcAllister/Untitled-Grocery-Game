@@ -6879,7 +6879,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -8192,6 +8192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _postProcessVolume: {fileID: 1400034102}
+  toggle: {fileID: 1686972415}
+  text: {fileID: 1878351189}
 --- !u!4 &2018123406
 Transform:
   m_ObjectHideFlags: 0
