@@ -2166,7 +2166,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1400034097}
   Player: {fileID: 2008992644}
   playerRenderer: {fileID: 2008992648}
-  playerMovement: {fileID: 2008992645}
+  playerMovement: {fileID: 0}
   staffRenderer: {fileID: 550626091}
   projectilePrefab: {fileID: 7673548305274206427, guid: d689d1ab5516e6b4f80f9f6c40d6db18, type: 3}
   bulletSpawnPoint: {fileID: 1011205841}
@@ -8568,7 +8568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 1862523144}
-  playerSpeed: 20
+  playerSpeed: 7
 --- !u!1 &2018123404
 GameObject:
   m_ObjectHideFlags: 0
