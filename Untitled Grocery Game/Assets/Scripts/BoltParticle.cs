@@ -16,5 +16,7 @@ public class BoltParticle : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         Instantiate(ExplosionObject, transform.position, transform.rotation);
         Source.PlayOneShot(Clip);
+        yield return new WaitForSeconds(0.5f);
+        Destroy(gameObject);
     }
 }
