@@ -8408,7 +8408,6 @@ GameObject:
   - component: {fileID: 2008992645}
   - component: {fileID: 2008992650}
   - component: {fileID: 2008992651}
-  - component: {fileID: 2008992652}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -8570,19 +8569,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 1862523144}
   playerSpeed: 7
---- !u!114 &2008992652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008992644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7a8090e99d48f74c9d9e30f21ed6962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  notInPanel: 0
 --- !u!1 &2018123404
 GameObject:
   m_ObjectHideFlags: 0
