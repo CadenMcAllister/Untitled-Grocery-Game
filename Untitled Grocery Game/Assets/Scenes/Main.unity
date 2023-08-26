@@ -7818,8 +7818,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -427.4089, y: -221.5881}
-  m_SizeDelta: {x: -854.8179, y: -442.7151}
+  m_AnchoredPosition: {x: -427.40894, y: -221.12949}
+  m_SizeDelta: {x: -854.8179, y: -441.7862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1862523143
 MonoBehaviour:
@@ -8408,6 +8408,7 @@ GameObject:
   - component: {fileID: 2008992645}
   - component: {fileID: 2008992650}
   - component: {fileID: 2008992651}
+  - component: {fileID: 2008992652}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -8502,7 +8503,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c98b9cd543d1a6d448e27babb81798a0, type: 3}
+  m_Sprite: {fileID: 21300002, guid: c98b9cd543d1a6d448e27babb81798a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8545,8 +8546,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.3193979}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.46655524, y: 0.060200732}
-    oldSize: {x: 1.8, y: 3}
+    pivot: {x: 0.49409798, y: 0.0516875}
+    oldSize: {x: 1.7, y: 3.3}
     newSize: {x: 1.8, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8569,6 +8570,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 1862523144}
   playerSpeed: 7
+--- !u!114 &2008992652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008992644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a8090e99d48f74c9d9e30f21ed6962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notInPanel: 0
 --- !u!1 &2018123404
 GameObject:
   m_ObjectHideFlags: 0

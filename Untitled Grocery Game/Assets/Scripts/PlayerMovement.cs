@@ -35,18 +35,6 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        if (Input.GetKeyDown(KeyCode.W)){
-            playerSprite.sprite = spriteList[0];
-        }
-        if (Input.GetKeyDown(KeyCode.S)){
-            playerSprite.sprite = spriteList[1];
-        }
-        if (Input.GetKeyDown(KeyCode.D)){
-            playerSprite.sprite = spriteList[2];
-        }
-        if (Input.GetKeyDown(KeyCode.A)){
-            playerSprite.sprite = spriteList[3];
-        }
         if (currentHealth == 0){
             gameOver.SetActive(true);
             Destroy(gameObject);
