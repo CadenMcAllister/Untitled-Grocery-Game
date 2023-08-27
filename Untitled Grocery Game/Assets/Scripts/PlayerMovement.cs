@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");   
              
     }
-    
+
 
         private void OnTriggerEnter2D (Collider2D other){
         if (other.gameObject.CompareTag("EnemyProjectile")){

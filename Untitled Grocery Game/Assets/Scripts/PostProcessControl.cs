@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
+using TMPro;
 
 public class PostProcessControl : MonoBehaviour
 {
     [SerializeField] private PostProcessVolume _postProcessVolume;
     public Toggle toggle;
-    public Text text;
+    public TMP_Text text;
 
 
     void Awake(){
