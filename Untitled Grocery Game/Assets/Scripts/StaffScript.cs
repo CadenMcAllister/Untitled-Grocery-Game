@@ -50,7 +50,6 @@ public class StaffScript : MonoBehaviour
 
     Animator projectileAnimator = newProjectile.GetComponent<Animator>();
     projectileAnimator.Play("Fireball");
-    Destroy(newProjectile, 5f);
     }
 
     void FixedUpdate(){
