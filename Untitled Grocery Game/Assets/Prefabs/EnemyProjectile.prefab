@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07f9140eb52d31546ba4f6e90542b86b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerNum: 3
   force: 20
   animator: {fileID: 0}
 --- !u!82 &4157681460653305381
