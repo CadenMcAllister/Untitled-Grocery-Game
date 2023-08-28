@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
     private GameObject player;
+    public int layerNum = 3;
     private Rigidbody2D rb;
     public float force;
     public Animator animator;
@@ -41,8 +42,8 @@ public class EnemyBullet : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D (Collider2D other){
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Obstacle")){
+    private void OnTriggerEnter2D (Collider2D collision){
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.layer == layerNum){
             Destroy(gameObject);
         }
     }
