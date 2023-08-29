@@ -4786,6 +4786,8 @@ MonoBehaviour:
   Bullet: {fileID: 2475633486170625395, guid: 7c10b0053eed7914183c534fe330cfba, type: 3}
   bulletPos: {fileID: 544055478}
   animator: {fileID: 0}
+  bulletPosx: 0
+  bulletPosy: 0
 --- !u!114 &1149395394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5124,6 +5126,8 @@ MonoBehaviour:
   Bullet: {fileID: 2475633486170625395, guid: 7c10b0053eed7914183c534fe330cfba, type: 3}
   bulletPos: {fileID: 707498972}
   animator: {fileID: 0}
+  bulletPosx: 0
+  bulletPosy: 0
 --- !u!114 &1182504199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6985,6 +6989,8 @@ MonoBehaviour:
   Bullet: {fileID: 2475633486170625395, guid: 7c10b0053eed7914183c534fe330cfba, type: 3}
   bulletPos: {fileID: 1459095860}
   animator: {fileID: 0}
+  bulletPosx: 0
+  bulletPosy: 0
 --- !u!114 &1656714475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8489,7 +8495,7 @@ MonoBehaviour:
   - {fileID: 21300002, guid: c98b9cd543d1a6d448e27babb81798a0, type: 3}
   - {fileID: 21300004, guid: c98b9cd543d1a6d448e27babb81798a0, type: 3}
   - {fileID: 21300006, guid: c98b9cd543d1a6d448e27babb81798a0, type: 3}
-  maxHealth: 100
+  maxHealth: 200
   currentHealth: 0
   healthBar: {fileID: 1237247974}
   gameOver: {fileID: 1365149978}
