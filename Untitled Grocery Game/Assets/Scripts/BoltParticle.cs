@@ -9,14 +9,16 @@ public class BoltParticle : MonoBehaviour
     public AudioSource Source;
     public AudioClip Clip;
     private void OnCollisionEnter2D(Collision2D collision){
+        if(!collision.gameObject.CompareTag("Player")){
         StartCoroutine(Collision());
+        }
     }
 
     IEnumerator Collision(){
         yield return new WaitForSeconds(0.2f);
         Instantiate(ExplosionObject, transform.position, transform.rotation);
         Source.PlayOneShot(Clip);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
     }
 }
