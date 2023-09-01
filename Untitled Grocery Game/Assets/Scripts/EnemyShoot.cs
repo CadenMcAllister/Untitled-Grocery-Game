@@ -16,7 +16,7 @@ public class EnemyShoot : MonoBehaviour
     {
         if (gameObject != null){
         Player =  GameObject.FindGameObjectWithTag("Player");
-        animator = GameObject.FindGameObjectWithTag("EnemyGFX").GetComponent<Animator>();
+        animator = GameObject.FindGameObjectWithTag("EnemyGFX").GetComponentInChildren<Animator>();
         }
     }
 
@@ -38,6 +38,13 @@ public class EnemyShoot : MonoBehaviour
 
     void shoot(){
         animator.SetBool("Shoot", true);
+        Debug.Log("Set");
         Instantiate(Bullet, new Vector3 (bulletPosx, bulletPosy, 0), Quaternion.identity);
+        StartCoroutine(StopAnim());
+    }
+
+    IEnumerator StopAnim(){
+        yield return new WaitForSeconds(0);
+        Debug.Log("StopAnim");
     }
 }
