@@ -23,6 +23,7 @@ public class EnemyShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Player != null){
         bulletPosx = bulletPos.position.x;
         bulletPosy = bulletPos.position.y;
         float distance = Vector2.Distance(transform.position, Player.transform.position);
@@ -30,8 +31,10 @@ public class EnemyShoot : MonoBehaviour
         timer += Time.deltaTime;
 
             if (timer > 1){
+        
         timer = 0;
         shoot();
+        }
         }
         }
     }
