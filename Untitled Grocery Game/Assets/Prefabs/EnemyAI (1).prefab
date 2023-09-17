@@ -320,6 +320,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 5644885599623694961}
+  animator: {fileID: 5644885601108091652}
 --- !u!1 &5644885600735380652
 GameObject:
   m_ObjectHideFlags: 0
