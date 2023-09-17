@@ -9,7 +9,6 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
 
     public HealthBar healthBar;
-    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +30,6 @@ public class EnemyHealth : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.CompareTag("Projectile")){
-            animator.SetTrigger("Flash");
             TakeDamage(20);
         }
     }
