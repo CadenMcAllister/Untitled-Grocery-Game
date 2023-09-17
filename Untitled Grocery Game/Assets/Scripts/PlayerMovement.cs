@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
         private void OnTriggerEnter2D (Collider2D other){
         if (other.gameObject.CompareTag("EnemyProjectile")){
-            TakeDamage(20);
+            TakeDamage(10);
         }
     }
 
