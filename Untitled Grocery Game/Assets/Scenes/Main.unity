@@ -4772,6 +4772,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 562002498}
+  animator: {fileID: 61591140}
 --- !u!114 &1149395393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5112,6 +5113,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 1494456104}
+  animator: {fileID: 26852957}
 --- !u!114 &1182504198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6975,6 +6977,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 871994941}
+  animator: {fileID: 1029815690}
 --- !u!114 &1656714474
 MonoBehaviour:
   m_ObjectHideFlags: 0
