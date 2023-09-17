@@ -859,7 +859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -71, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &189951318
@@ -2308,6 +2308,7 @@ MonoBehaviour:
   projectileForce: 10
   gunAnimator: {fileID: 8158427806220237582, guid: d689d1ab5516e6b4f80f9f6c40d6db18, type: 3}
   offset: {x: 0.34, y: 0.62, z: 0}
+  shootCooldown: 0.5
 --- !u!1 &562002497
 GameObject:
   m_ObjectHideFlags: 0
@@ -7959,8 +7960,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -427.40894, y: -221.12949}
-  m_SizeDelta: {x: -854.8179, y: -441.7862}
+  m_AnchoredPosition: {x: -376.33884, y: -211.245}
+  m_SizeDelta: {x: -752.6774, y: -421.7668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1862523143
 MonoBehaviour:

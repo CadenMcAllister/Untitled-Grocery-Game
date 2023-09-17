@@ -42,13 +42,12 @@ public class PlayerMovement : MonoBehaviour
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");   
-             
     }
 
 
         private void OnTriggerEnter2D (Collider2D other){
         if (other.gameObject.CompareTag("EnemyProjectile")){
-            TakeDamage(20);
+            TakeDamage(10);
         }
     }
 }
