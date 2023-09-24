@@ -5,6 +5,8 @@ using UnityEngine;
 public class StaffScript : MonoBehaviour
 {
     public Transform spriteTransform;
+    public float shakeIntensity = 5f;
+    public float shakeDuration = 0.1f;
     public Camera mainCamera;
     public GameObject Player;
     public SpriteRenderer playerRenderer;
@@ -62,6 +64,8 @@ public class StaffScript : MonoBehaviour
             Rigidbody2D rb = newProjectile.GetComponent<Rigidbody2D>();
 
             rb.AddForce(transform.right * currentGun.GetComponent<StaffScript>().projectileForce, ForceMode2D.Impulse);
+
+            CinemachineShake.Instance.ShakeCamera(shakeIntensity, shakeDuration);
 
             Animator projectileAnimator = newProjectile.GetComponent<Animator>();
             projectileAnimator.Play("Fireball");
