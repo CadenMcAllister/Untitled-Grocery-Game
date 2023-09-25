@@ -168,6 +168,8 @@ MonoBehaviour:
   Bullet: {fileID: 2475633486170625395, guid: 7c10b0053eed7914183c534fe330cfba, type: 3}
   bulletPos: {fileID: 4065685768065338053}
   animator: {fileID: 0}
+  bulletPosx: 0
+  bulletPosy: 0
 --- !u!114 &4065685767592430620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +185,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 4065685767813156401}
+  animator: {fileID: 4065685768743905092}
 --- !u!1 &4065685767813156414
 GameObject:
   m_ObjectHideFlags: 0
