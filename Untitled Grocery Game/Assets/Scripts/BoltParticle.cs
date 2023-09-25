@@ -15,6 +15,7 @@ public class BoltParticle : MonoBehaviour
     }
 
     IEnumerator Collision(){
+        CinemachineShake.Instance.ShakeCamera(2f, 0.2f);
         yield return new WaitForSeconds(0.2f);
         Instantiate(ExplosionObject, transform.position, transform.rotation);
         Source.PlayOneShot(Clip);
