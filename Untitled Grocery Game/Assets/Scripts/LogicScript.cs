@@ -10,7 +10,6 @@ public class LogicScript : MonoBehaviour
     {
         
     }
-
       public void restartGame(){
          SceneManager.LoadScene(SceneManager.GetActiveScene().name);
       }
