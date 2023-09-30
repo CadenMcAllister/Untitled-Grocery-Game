@@ -2385,6 +2385,7 @@ MonoBehaviour:
   shakeIntensity: 2
   shakeDuration: 0.2
   mainCamera: {fileID: 1400034097}
+  coolAnim: {fileID: 905204537}
   Player: {fileID: 2008992644}
   playerRenderer: {fileID: 2008992648}
   playerMovement: {fileID: 0}
@@ -4191,6 +4192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 905204535}
   - component: {fileID: 905204536}
+  - component: {fileID: 905204537}
   m_Layer: 5
   m_Name: CooldownHolder
   m_TagString: Untagged
@@ -4271,6 +4273,27 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &905204537
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905204534}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e46e9a1df87aaba4abb2bd5d09178580, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &910582242
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,8 +6451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -52.514362, y: 258.9875}
-  m_SizeDelta: {x: 513.7108, y: 132.7488}
+  m_AnchoredPosition: {x: -52.514362, y: 256.42892}
+  m_SizeDelta: {x: 518.8278, y: 132.7488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1374893460
 MonoBehaviour:
