@@ -8,6 +8,7 @@ public class StaffScript : MonoBehaviour
     public float shakeIntensity = 5f;
     public float shakeDuration = 0.1f;
     public Camera mainCamera;
+    public Animator coolAnim;
     public GameObject Player;
     public SpriteRenderer playerRenderer;
     public PlayerMovement playerMovement;
@@ -60,6 +61,8 @@ public class StaffScript : MonoBehaviour
     {
         if (Time.time - lastShotTime >= shootCooldown)
         {
+            coolAnim.SetTrigger("Cooldown");
+
             GameObject newProjectile = Instantiate(currentGun.GetComponent<StaffScript>().projectilePrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             Rigidbody2D rb = newProjectile.GetComponent<Rigidbody2D>();
 
