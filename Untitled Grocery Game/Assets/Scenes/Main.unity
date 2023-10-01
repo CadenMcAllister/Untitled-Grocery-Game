@@ -337,6 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 49260648}
   - component: {fileID: 49260649}
+  - component: {fileID: 49260650}
   m_Layer: 5
   m_Name: CooldownHolder
   m_TagString: Untagged
@@ -417,6 +418,27 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &49260650
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49260647}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8be96e3276267743bd7617283c30150, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &61591137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,6 +2505,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1011205841}
   projectileForce: 10
   gunAnimator: {fileID: 8158427806220237582, guid: d689d1ab5516e6b4f80f9f6c40d6db18, type: 3}
+  coolAnim: {fileID: 49260650}
   offset: {x: 0.34, y: 0.62, z: 0}
   shootCooldown: 0.5
 --- !u!1 &562002497

@@ -16,6 +16,7 @@ public class StaffScript : MonoBehaviour
     public Transform bulletSpawnPoint;
     public float projectileForce = 10f;
     public Animator gunAnimator;
+    public Animator coolAnim;
     private GameObject currentGun;
 
     public Vector3 offset;
@@ -60,6 +61,7 @@ public class StaffScript : MonoBehaviour
     {
         if (Time.time - lastShotTime >= shootCooldown)
         {
+            coolAnim.SetTrigger("Cooldown");
             GameObject newProjectile = Instantiate(currentGun.GetComponent<StaffScript>().projectilePrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             Rigidbody2D rb = newProjectile.GetComponent<Rigidbody2D>();
 
