@@ -22,7 +22,7 @@ public class StaffScript : MonoBehaviour
     public Vector3 offset;
 
     // Cooldown variables
-    public float shootCooldown = 1.0f; // Adjust this value for your desired cooldown duration
+    public float shootCooldown = 1.0f; 
     private float lastShotTime = 0.0f;
     private bool canShoot = true;
 
